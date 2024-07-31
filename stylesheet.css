@@ -578,6 +578,67 @@ input[type="radio"] {
   }
 }
 
+@media (max-width: 360px) {
+  .container {
+    display: none; /* Hide the container when the width is 480px or less */
+  }
+  body {
+    width: 100%;
+  }
+  nav {
+    font-size: 5px; /* Reduce font size for smaller screens */
+  }
+
+  nav li {
+    padding-right: 2px;
+  }
+  #logo {
+    font-size: 20px;
+    margin-top: 23px;
+  }
+  ul {
+    margin-right: 12px;
+  }
+  .choice {
+    background-color: #fff;
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the element horizontally */
+    padding: 3%; /* Optional: Add padding if needed */
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+  }
+  .civil {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 40%;
+    font-size: 30px;
+  }
+  #form-box {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  #info {
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  .question {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  #notification {
+    margin-left: 8px;
+    margin-right: 13px;
+    width: 60%;
+  }
+  .options {
+    font-size: 17px;
+  }
+}
+
 .party-popper {
   position: fixed;
   top: 0;
