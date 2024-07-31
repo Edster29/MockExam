@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, sans-serif; /* Fallback to sans-serif if Arial is not available */
+  font-family: Arial, sans-serif;
 }
 
 nav {
@@ -27,12 +27,12 @@ nav li {
 }
 
 .Title {
-  display: flex; /* Use Flexbox to center content */
-  flex-direction: column; /* Stack elements vertically */
-  align-items: left; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  height: 15vh; /* Full viewport height */
-  text-align: center; /* Center text horizontally within the container */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 15vh;
+  text-align: center;
 
   font-family: "Prompt", sans-serif;
   width: 100%;
@@ -53,7 +53,7 @@ nav li {
 .container {
   display: block;
   width: 100%;
-  height: 400px; /* Adjust as needed */
+  height: 400px;
   margin-top: -370px;
   float: right;
 }
@@ -62,7 +62,7 @@ nav li {
   float: right;
   bottom: 0;
   right: 0;
-  width: 37%; /* Adjust as needed */
+  width: 37%;
   margin-top: 100px;
 }
 h3 {
@@ -110,16 +110,16 @@ h3 {
 }
 
 #form-box {
-  padding: 20px; /* Padding around the form box */
+  padding: 20px;
   padding-left: 0px;
   margin-top: 20px;
-  border-radius: 10px; /* Rounded corners for the form box */
+  border-radius: 10px;
 }
 
 form {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Center form elements horizontally */
+  align-items: center;
   justify-content: flex-start;
   margin-left: 50px;
 }
@@ -168,7 +168,7 @@ form {
 .quiz {
   background-color: #fff;
   text-align: center;
-  /*    padding: 0%;*/
+
   margin-top: 20px;
   height: 100vh;
   font-family: "Prompt", sans-serif;
@@ -195,7 +195,6 @@ form {
 }
 
 #ques-view {
-  /*    background-color:aqua;*/
   height: 35px;
   margin-top: 10px;
   padding: 2px;
@@ -223,9 +222,9 @@ form {
 
 .choice {
   background-color: #fff;
-  width: 50%; /* Adjust the width as needed */
-  margin: 0 auto; /* Centers the element horizontally */
-  padding: 3%; /* Optional: Add padding if needed */
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
 }
 
 .options {
@@ -308,8 +307,6 @@ input[type="radio"] {
   cursor: pointer;
   border-radius: 20px;
 }
-
-/*Final Results*/
 
 .final-result {
   background-color: #fff;
@@ -411,7 +408,7 @@ input[type="radio"] {
   form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form elements horizontally */
+    align-items: center;
     justify-content: center;
     margin-left: 0%;
     margin-top: 5%;
@@ -453,7 +450,7 @@ input[type="radio"] {
   form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form elements horizontally */
+    align-items: center;
     justify-content: center;
     margin-left: 0%;
     margin-top: 5%;
@@ -477,7 +474,7 @@ input[type="radio"] {
   form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form elements horizontally */
+    align-items: center;
     justify-content: center;
     margin-left: 0%;
     margin-top: 5%;
@@ -499,13 +496,13 @@ input[type="radio"] {
     display: none;
   }
   nav {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     margin-right: 0px;
   }
 
   nav li {
-    padding: 10px; /* Adjust padding */
+    padding: 10px;
     font-size: 13px;
     margin-right: 2px;
     margin-top: 20px;
@@ -538,24 +535,24 @@ input[type="radio"] {
 
 @media (max-width: 480px) {
   .container {
-    display: none; /* Hide the container when the width is 480px or less */
+    display: none;
   }
   body {
     width: 100%;
   }
   nav {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px;
   }
 
   nav li {
-    padding: 8px; /* Further adjust padding */
+    padding: 8px;
   }
 
   .choice {
     background-color: #fff;
-    width: 90%; /* Adjust the width as needed */
-    margin: 0 auto; /* Centers the element horizontally */
-    padding: 3%; /* Optional: Add padding if needed */
+    width: 90%;
+    margin: 0 auto;
+    padding: 3%;
   }
   form {
     display: flex;
@@ -595,7 +592,7 @@ input[type="radio"] {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: red; /* Default color */
+  background-color: red;
   animation: popper 1.5s linear infinite;
   pointer-events: none;
 }

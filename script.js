@@ -4,10 +4,8 @@ var score = 0;
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    // Generate a random index
     const j = Math.floor(Math.random() * (i + 1));
 
-    // Swap elements at indices i and j
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
@@ -17,7 +15,7 @@ var Numericquestions = [
   {
     question: "Multiply 2/3 by 3/4.",
     choices: ["1/2", "2/3", "1/4", "1/6"],
-    answer: 1, // Corrected to 1/2
+    answer: 1,
     explanation:
       "To multiply fractions, multiply the numerators and the denominators: (2 * 3) / (3 * 4) = 6/12, which simplifies to 1/2.",
   },
@@ -416,8 +414,6 @@ var Numericquestions = [
 ];
 
 var Analyticalquestions = [
-  // Word Association
-
   {
     question: "Which word is most closely related to 'sun'?",
     choices: ["Moon", "Light", "River", "Mountain"],
@@ -433,7 +429,7 @@ var Analyticalquestions = [
     explanation:
       "Doctors work in hospitals, so 'Hospital' is the word most closely related to 'doctor'.",
   },
-  // Identifying Assumptions and Conclusions
+
   {
     question:
       "Assume that all dogs are animals. If 'Rover' is a dog, what can we conclude?",
@@ -490,7 +486,7 @@ var Analyticalquestions = [
     answer: 1,
     explanation: "A raincoat is typically worn when it is raining.",
   },
-  // Logic
+
   {
     question:
       "If all cats are animals and some animals are not pets, can we conclude that some cats are not pets?",
@@ -535,7 +531,7 @@ var Analyticalquestions = [
     explanation:
       "Since every student passed the exam, John, being a student, also passed.",
   },
-  // Data Interpretation
+
   {
     question:
       "If a pie chart shows that 30% of a company's revenue comes from product A, and the company has a total revenue of $100,000, how much revenue comes from product A?",
@@ -573,7 +569,7 @@ var Analyticalquestions = [
     answer: 1,
     explanation: "The average score is 80, so the total score is 80 * 5 = 400.",
   },
-  // Additional Questions
+
   {
     question: "Which word is most closely related to 'water'?",
     choices: ["Tree", "Mountain", "Ocean", "Book"],
@@ -831,7 +827,6 @@ var Analyticalquestions = [
 ];
 
 var Verbalquestions = [
-  // Grammar and Correct Usage
   {
     question:
       "Choose the correct form of the verb: She ___ to the store yesterday.",
@@ -876,7 +871,7 @@ var Verbalquestions = [
     explanation:
       "The correct pronoun is 'their', so the sentence should be 'The students should bring their books to class.'",
   },
-  // Vocabulary
+
   {
     question: "What is the synonym of 'happy'?",
     choices: ["Sad", "Joyful", "Angry", "Tired"],
@@ -910,7 +905,7 @@ var Verbalquestions = [
     explanation:
       "The word 'innovative' means 'creative' or introducing new ideas.",
   },
-  // Paragraph Organization
+
   {
     question:
       "Rearrange the following sentences to form a coherent paragraph: 1. Finally, she finished her painting. 2. She began her work early in the morning. 3. The gallery exhibition was a huge success. 4. She worked on her painting throughout the day.",
@@ -951,7 +946,7 @@ var Verbalquestions = [
     explanation:
       "The sentence 'Playing sports can be a great way to stay fit.' introduces the main idea of the paragraph.",
   },
-  // Reading Comprehension
+
   {
     question:
       "Read the passage: 'John went to the store to buy ingredients for a cake. He needed flour, sugar, and eggs. After purchasing the items, he went home to bake.' What did John buy from the store?",
@@ -1025,7 +1020,7 @@ var Verbalquestions = [
     explanation:
       "The correct sentence should be 'They have been working on the project for several months now.' The verb 'has' should be 'have' to agree with the plural subject 'They'.",
   },
-  // Additional Questions
+
   {
     question:
       "Choose the correct form of the word: 'His contribution was very ___.'",
@@ -1353,7 +1348,6 @@ var Generalquestions = [
       "The official language of the Philippine government is 'Filipino.'",
   },
 
-  // Code of Conduct and Ethical Standards for Public Officials and Employees
   {
     question:
       "What is the primary purpose of the Code of Conduct and Ethical Standards for Public Officials and Employees?",
@@ -1409,7 +1403,6 @@ var Generalquestions = [
       "Transparency is an ethical standard required of public officials under the Code of Conduct.",
   },
 
-  // Peace and Human Rights Issues
   {
     question:
       "Which international document outlines fundamental human rights and freedoms?",
@@ -1475,7 +1468,6 @@ var Generalquestions = [
       "Extrajudicial killing refers to the killing of individuals by government authorities without judicial process.",
   },
 
-  // Environment Management and Protection
   {
     question: "What is the main purpose of the Philippine Clean Air Act?",
     choices: [
@@ -1541,7 +1533,6 @@ var Generalquestions = [
       "The key objective is to assess and mitigate the environmental impact of projects.",
   },
 
-  // Additional General Questions
   {
     question:
       "Which of the following is a constitutional body responsible for the enforcement of civil rights in the Philippines?",
@@ -1706,9 +1697,7 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     'input[name="options"]:checked'
   );
 
-  // Function to show the modal
   function showModal(title, message) {
-    // Create the modal elements
     const modal = document.createElement("div");
     const modalContent = document.createElement("div");
     const modalHeader = document.createElement("div");
@@ -1716,7 +1705,6 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     const modalBody = document.createElement("div");
     const closeButton = document.createElement("button");
 
-    // Apply styles to modal
     modal.style.display = "flex";
     modal.style.position = "fixed";
     modal.style.zIndex = "1000";
@@ -1729,7 +1717,6 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     modal.style.justifyContent = "center";
     modal.style.alignItems = "center";
 
-    // Style modal content
     modalContent.style.backgroundColor = "white";
     modalContent.style.margin = "15% auto";
     modalContent.style.padding = "20px";
@@ -1737,7 +1724,6 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     modalContent.style.borderRadius = "5px";
     modalContent.style.width = "80%";
 
-    // Style modal header
     modalHeader.style.padding = "10px";
     modalHeader.style.borderBottom = "1px solid #ddd";
 
@@ -1745,16 +1731,13 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     modalTitle.style.fontWeight = "bold";
     modalTitle.style.fontSize = "18px";
 
-    // Style modal body
     modalBody.style.padding = "20px";
     modalBody.style.fontSize = "16px";
 
-    // Apply style to the message
     const messageParagraph = document.createElement("p");
     const correctMessage = "Correct!";
     const incorrectMessage = "Incorrect!";
 
-    // Check and style the message
     if (message.startsWith(correctMessage)) {
       messageParagraph.innerHTML = message.replace(
         correctMessage,
@@ -1769,7 +1752,6 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
       messageParagraph.textContent = message;
     }
 
-    // Style close button
     closeButton.textContent = "Proceed";
     closeButton.style.backgroundColor = "#4CAF50";
     closeButton.style.color = "white";
@@ -1783,10 +1765,9 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     closeButton.style.cursor = "pointer";
 
     closeButton.addEventListener("click", () => {
-      document.body.removeChild(modal); // Remove the modal from the DOM
+      document.body.removeChild(modal);
     });
 
-    // Assemble the modal
     modalHeader.appendChild(modalTitle);
     modalBody.appendChild(messageParagraph);
     modalContent.appendChild(modalHeader);
@@ -1794,11 +1775,9 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     modalContent.appendChild(closeButton);
     modal.appendChild(modalContent);
 
-    // Append the modal to the body
     document.body.appendChild(modal);
   }
 
-  // Your existing script logic
   if (
     selectedOption &&
     selectedOption.value ===
@@ -1873,7 +1852,6 @@ document.getElementById("restart2").addEventListener("click", function () {
   location.reload();
 });
 
-/* Inline CSS to be injected dynamically if necessary */
 const style = document.createElement("style");
 style.innerHTML = `
   #notification {
@@ -1902,34 +1880,27 @@ style.innerHTML = `
   }
 `;
 
-// Inject the styles into the document
 document.head.appendChild(style);
 
 document.getElementById("read").addEventListener("click", function () {
-  // Create notification element
   let notification = document.createElement("div");
   notification.id = "notification";
   notification.className = "notification";
 
-  // Create title element
   let title = document.createElement("div");
   title.className = "notification-title";
   title.textContent = "Eyyyyyy ka munaaaaa |--/ |--/ |--/";
 
-  // Create content element
   let content = document.createElement("div");
   content.className = "notification-content";
   content.innerHTML =
     " <b>Note:</b> The specifics of the question might not be exactly the same on the actual exam, but the concept remains consistent. It is based on research and personal experience. If there are any inconsistencies with the sample question, please email me. Thanks.";
 
-  // Append title and content to notification
   notification.appendChild(title);
   notification.appendChild(content);
 
-  // Append notification to the body
   document.body.appendChild(notification);
 
-  // Automatically remove the notification after 10 seconds
   setTimeout(() => {
     notification.remove();
   }, 11000);
@@ -1945,5 +1916,3 @@ $(document).on("click", 'a[href^="#"]', function (event) {
     1000
   );
 });
-
-/* Smooth Scroll End */
