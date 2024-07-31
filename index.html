@@ -1,0 +1,118 @@
+<html>
+
+    <head>
+        <title>CSE-Mock exam</title>
+        <link rel="icon" href="26.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            
+        <nav>
+            <h2 id="logo">TechEd</h2>
+        <ul>
+            
+            <li id="read">Please Read!</li>
+
+
+            <li ><a href="https://docs.google.com/document/d/1CyWYggD4FLFqmsmYAXM6fiWmv-SXJJDS/edit"  class="mail"> About Dev </a></li>
+            <li ><a href="mailto:qwertymose@gmail.com" class="mail"> Contact </a> </li>
+        </ul>
+        </nav>
+        <div class="alo">
+        <div class="Title" >
+
+            <h1 class="civil">Civil Service Mock Exam</h1>
+            <h3>Developed By: TechEd</h3>
+        </div>
+            <div id="form-box">
+                <form>
+                    <select id="language">
+                    <option selected="selected">Select Coverage</option>
+                    <option value="Numeric">Numeric Ability</option>
+                    <option value="Analytical">Analytical Ability</option>
+                    <option value="Verbal">Verbal Ability</option>
+                    <option value="General">General Information</option>
+                    </select> 
+                    <a href="#lb3" class="choose-lang">Start Test</a>
+                    </form>
+            </div>   
+            <div class="container">
+                <img src="bc.png" alt="Error Image">
+              </div>
+        </div>
+        
+
+            </div>
+            
+
+
+        
+        
+        <div class="quiz">
+        
+            <div id="info">
+                <div id="ques-left">Question:1/20</div>
+                <div id="score">Score: 0</div>
+            </div>
+            
+            <div class="question">
+            <h1 style="color: black; font-weight: 100px;">Question</h1>
+            </div>
+            
+            <div class="choice">
+                <div class="options"><input class="ra" type="radio" name="options" value="option1" id="opt0"><label for="opt0" id="lb0">Option1</label></div>
+                <div class="options"><input class="ra" type="radio" name="options" value="option2" id="opt1"><label for="opt1" id="lb1">Option2</label></div>
+                <div class="options"><input class="ra" type="radio" name="options" value="option3" id="opt2"><label for="opt2" id="lb2">Option3</label></div>
+                <div class="options"><input class="ra"  type="radio" name="options" value="option4" id="opt3"><label for="opt3" id="lb3">Option4</label></div>   
+            </div>
+
+             <div class="ans-btn">
+                <button type="button" class="submit-answer">Submit Answer</button>
+                <button type="button" id="restart"  class="restart-answer">Restart Exam</button>
+                 <a href="#display-final-score" type="button" class="view-results">View Results</a>
+            </div>
+        
+        </div>
+
+   
+        
+        <div class="final-result">
+            <div class="party-popper"></div>
+            <h1>Awesome! You finished the quiz.</h1>
+            <div class="solved-ques-no">You Solved 10 questions of </div>
+            <div class="right-wrong"></div>
+            <div id="display-final-score">Your Final Score is: 35</div>
+            <div class="remark">Remark: Satisfactory, Keep trying.</div>
+            <button type="button" id="restart2" class="restart-answer">Restart Exam</button>    
+        
+        </div>
+
+        <script>
+            const partyPopper = document.querySelector('.party-popper');
+            const colors = ['#f39c12', '#e74c3c', '#8e44ad', '#3498db', '#2ecc71', '#f1c40f'];
+            
+            for (let i = 0; i < 100; i++) {
+                const particle = document.createElement('div');
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.animationDelay = Math.random() * 2 + 's';
+                partyPopper.appendChild(particle);
+            }
+    
+           
+        </script>
+    
+        
+       
+        <script src="script.js"></script>
+    </body>
+
+</html>
